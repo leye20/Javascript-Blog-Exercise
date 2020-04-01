@@ -15,6 +15,7 @@
  * - If you are adding functions or using methods, use ES6 standard.
  */
 
+ 
 class Article {
     constructor ( title = 'Blog Title', content = 'Lorem ipsum...' )
     {
@@ -40,9 +41,6 @@ class Article {
     }
   }
   
-  const myArticle = new Article();
-  console.log( myArticle );
-
   const blogArticles = [
     new Article(
       'First Day of Class (C#)',
@@ -70,7 +68,7 @@ class Article {
     )
   ];
   
-  // TODO: Add a new article to the array (add "SASS" inbetween the "CSS" and "JS" articles.)
+  // Add a new article to the array (add "SASS" inbetween the "CSS" and "JS" articles.)
   const SASS = new Article (
     'Adding to our Styling (SASS)',
     'This was a very handy tool for the just concluded projematic vision projects. Helps organize your work. you should try it!'
@@ -79,11 +77,12 @@ class Article {
   blogArticles.splice( 3, 0, SASS);
   console.log(blogArticles);
 
+  const myElement = document.body;
+  // SASS.output( myElement );
+
   for ( let article of blogArticles )
   {
-    // TODO: Loop through articles and output each of them to the browser.
+    // Loop through articles and output each of them to the browser.
     console.log( article );
-    article.output( )
+    article.output( myElement );
   }
-  
-  console.log( blogArticles );
