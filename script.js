@@ -71,10 +71,19 @@ class Article {
   ];
   
   // TODO: Add a new article to the array (add "SASS" inbetween the "CSS" and "JS" articles.)
-  
+  const SASS = new Article (
+    'Adding to our Styling (SASS)',
+    'This was a very handy tool for the just concluded projematic vision projects. Helps organize your work. you should try it!'
+  );
+   
+  blogArticles.splice( 3, 0, SASS);
+  console.log(blogArticles);
+
   for ( let article of blogArticles )
   {
     // TODO: Loop through articles and output each of them to the browser.
+    console.log( article );
+    article.output( )
   }
   
   console.log( blogArticles );
