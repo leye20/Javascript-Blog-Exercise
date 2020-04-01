@@ -40,6 +40,9 @@ class Article {
     }
   }
   
+  const myArticle = new Article();
+  console.log( myArticle );
+
   const blogArticles = [
     new Article(
       'First Day of Class (C#)',
@@ -74,3 +77,4 @@ class Article {
     // TODO: Loop through articles and output each of them to the browser.
   }
   
+  console.log( blogArticles );
